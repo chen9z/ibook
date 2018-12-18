@@ -42,12 +42,6 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-//      appBar: new AppBar(
-//        leading: new IconButton(icon: new Icon(Icons.menu), onPressed: null),
-//        actions: <Widget>[
-//          new IconButton(icon: new Icon(Icons.search), onPressed: searchIntent),
-//        ],
-//      ),
       body: pageList[pageIndex],
       bottomNavigationBar: new BottomNavigationBar(
         items: [

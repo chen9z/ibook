@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_webview_plugin/flutter_webview_plugin.dart';
+import 'package:ibook/BookManager.dart';
+import 'package:ibook/entity/BookItem.dart';
 
 class BookRankWidget extends StatefulWidget {
   @override
@@ -9,8 +10,7 @@ class BookRankWidget extends StatefulWidget {
   }
 }
 
-class BookRankState extends State<BookRankWidget>
-    with AutomaticKeepAliveClientMixin {
+class BookRankState extends State<BookRankWidget>{
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -19,11 +19,10 @@ class BookRankState extends State<BookRankWidget>
         title: new Text("排行"),
         centerTitle: true,
       ),
-      body: new WebviewScaffold(url: "https://m.qidian.com/male/"),
+      body: null,
     );
   }
 
-  @override
-  // TODO: implement wantKeepAlive
-  bool get wantKeepAlive => true;
+
 }
+
