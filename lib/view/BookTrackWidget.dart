@@ -15,6 +15,7 @@ class BookTrackState extends State<BookTrackWidget> with AutomaticKeepAliveClien
     return new Scaffold(
       appBar: new AppBar(
         title: new Text("书架"),
+        centerTitle: true,
         leading: new IconButton(icon: new Icon(Icons.menu), onPressed: null),
 
         actions: <Widget>[

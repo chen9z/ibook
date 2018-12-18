@@ -14,7 +14,7 @@ class BookShopState extends State<BookShopWidget> with AutomaticKeepAliveClientM
   Widget build(BuildContext context) {
     // TODO: implement build
     return new Scaffold(
-      appBar: new AppBar(title: new Text("书城"),),
+      appBar: new AppBar(title: new Text("书城"),centerTitle: true,),
       body: new WebviewScaffold(
         url: "https://m.qidian.com",
       ),

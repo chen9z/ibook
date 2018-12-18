@@ -17,6 +17,7 @@ class BookRankState extends State<BookRankWidget>
     return new Scaffold(
       appBar: new AppBar(
         title: new Text("排行"),
+        centerTitle: true,
       ),
       body: new WebviewScaffold(url: "https://m.qidian.com/male/"),
     );
