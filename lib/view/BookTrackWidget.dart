@@ -16,6 +16,7 @@ class BookTrackState extends State<BookTrackWidget> with AutomaticKeepAliveClien
       appBar: new AppBar(
         title: new Text("书架"),
         leading: new IconButton(icon: new Icon(Icons.menu), onPressed: null),
+
         actions: <Widget>[
           new IconButton(icon: new Icon(Icons.search), onPressed: searchIntent),
         ],
