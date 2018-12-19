@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:ibook/BookManager.dart';
 import 'package:ibook/entity/BookItem.dart';
 
 class BookRankWidget extends StatefulWidget {
@@ -22,7 +21,6 @@ class BookRankState extends State<BookRankWidget>{
       body: null,
     );
   }
-
 
 }
 

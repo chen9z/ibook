@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:ibook/view/BookRankWidget.dart';
-import 'package:ibook/view/BookShopWidget.dart';
-import 'package:ibook/view/BookTrackWidget.dart';
+import 'package:ibook/widget//BookRankWidget.dart';
+import 'package:ibook/widget/BookShopWidget.dart';
+import 'package:ibook/widget/BookTrackWidget.dart';
 
 void main() => runApp(MyApp());
 
