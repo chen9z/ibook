@@ -60,6 +60,38 @@ class _MyHomePageState extends State<MyHomePage> {
         },
         type: BottomNavigationBarType.fixed,
       ),
+      drawer: _getDrawer(),
+    );
+  }
+
+  _getDrawer() {
+    return new Drawer(
+      child: ListView(
+        children: <Widget>[
+          new DrawerHeader(
+            child: new Text("just read"),
+            decoration: new BoxDecoration(color: Colors.blue),
+          ),
+          new ListTile(
+            title: new Text("分享应用"),
+            onTap: () {
+              Navigator.pop(context);
+            },
+          ),
+          new ListTile(
+            title: new Text("免责声明"),
+            onTap: () {
+              Navigator.pop(context);
+            },
+          ),
+          new ListTile(
+            title: new Text("意见反馈"),
+            onTap: () {
+              Navigator.pop(context);
+            },
+          ),
+        ],
+      ),
     );
   }
 }
