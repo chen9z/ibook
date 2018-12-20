@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_webview_plugin/flutter_webview_plugin.dart';
-import 'package:ibook/view/ViewFactory.dart';
+import 'package:ibook/view/ViewUtils.dart';
 
 class BookShopWidget extends StatefulWidget{
   @override
@@ -15,10 +14,8 @@ class BookShopState extends State<BookShopWidget> with AutomaticKeepAliveClientM
   Widget build(BuildContext context) {
     // TODO: implement build
     return new Scaffold(
-      appBar: ViewFactory.createAppBar(context, "书城"),
-      body: new WebviewScaffold(
-        url: "https://m.qidian.com",
-      ),
+      appBar: ViewUtils.createAppBar(context, "书城",isShowSearch: true),
+      body: new Text("书架")
     );
   }
 

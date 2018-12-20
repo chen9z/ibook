@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ibook/common/BookManager.dart';
 import 'package:ibook/entity/BookItem.dart';
-import 'package:ibook/view/ViewFactory.dart';
+import 'package:ibook/view/ViewUtils.dart';
 import 'package:ibook/widget/ReadWidget.dart';
 
 class BookTrackWidget extends StatefulWidget {
@@ -50,7 +50,7 @@ class BookTrackState extends State<BookTrackWidget> {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-      appBar: ViewFactory.createAppBar(context, "书架", isShowMenu: true),
+      appBar: ViewUtils.createAppBar(context, "书架", isShowMenu: true),
       body: _getBody(),
     );
   }

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:ibook/widget/SearchWidget.dart';
 
-class ViewFactory {
+class ViewUtils {
   static AppBar createAppBar(BuildContext context, String title,
       {bool isShowMenu, bool isShowSearch}) {
     return new AppBar(
@@ -21,11 +22,7 @@ class ViewFactory {
                   onPressed: () {
                     Navigator.push(context,
                         new MaterialPageRoute(builder: (context) {
-                      return new Scaffold(
-                        appBar: new AppBar(
-                          title: new Text("搜索图书"),
-                        ),
-                      );
+                      return new SearchWidget();
                     }));
                   }),
             ]
